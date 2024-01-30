@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="<?php echo URL . 'application/libs/styles/e403.css' ?>">
+<div class="ghost">
+    <div class="ghost--navbar"></div>
+    <div class="ghost--columns">
+        <div class="ghost--column">
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+        </div>
+        <div class="ghost--column">
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+        </div>
+        <div class="ghost--column">
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+            <div class="code"></div>
+        </div>
+
+    </div>
+    <div class="ghost--main">
+        <div class="code"></div>
+        <div class="code"></div>
+
+    </div>
+
+</div>
+
+<h1 class="police-tape police-tape--1">
+    &nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Error: 403
+</h1>
+<h1 class="police-tape police-tape--2">Forbidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo URL ?>">Go Back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forbidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forbidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forbidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forbidden&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>

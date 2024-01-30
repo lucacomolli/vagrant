@@ -5,7 +5,7 @@
 Vagrant.configure("2") do |config|
 
   PROXY_URL = "http://10.20.5.51:8888"
-  PROXY_ENABLE = false
+  PROXY_ENABLE = true
   BOX_IMAGE = "ubuntu/jammy64"
   BASE_INT_NETWORK = "10.10.20"
   BASE_HOST_ONLY_NETWORK = "192.168.56"
@@ -44,6 +44,7 @@ Vagrant.configure("2") do |config|
       db.proxy.https = PROXY_URL
       db.proxy.no_proxy = "localhost,127.0.0.1"
     end
+    db.vm.synced_folder "./site/application/config", "/home/vagrant/sql/"
     db.vm.network "private_network", ip: "#{BASE_INT_NETWORK}.11", virtualbox__intnet: true
   end
 

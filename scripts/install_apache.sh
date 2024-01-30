@@ -5,6 +5,7 @@ sudo apt update
 
 # Installazione di Apache2
 sudo apt install apache2 -y
+sudo apt install mysql-client
 
 # Modifica della disposizione della tastiera
 sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/keyboard
@@ -23,14 +24,8 @@ sudo sed -i 's/display_startup_errors = Off/display_startup_errors = On/g' /etc/
 sudo phpenmod mysqli mbstring
 
 # Configurazione di Apache per permettere l'override del file .htaccess
-sudo sh -c 'echo "<Directory /var/www/html>
-    Options Indexes FollowSymLinks MultiViews
-    AllowOverride All
-    Require all granted
-</Directory>" >> /etc/apache2/sites-available/000-default.conf'
-
-# Abilitazione del modulo rewrite di Apache
 sudo a2enmod rewrite
+sudo sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 # Riavvio del server Apache
 sudo systemctl restart apache2

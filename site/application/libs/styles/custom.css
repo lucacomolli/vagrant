@@ -1,0 +1,34 @@
+body{
+    background-color: #101010;
+    color: white;
+}
+
+.card-dark{
+    background-color: #424242 !important;
+}
+
+.card-dark *{
+    color: #ffffff !important;
+}
+
+.card-dark:hover{
+    background-color: #696969 !important;
+}
+
+.card-dark-no-hover{
+    background-color: #424242 !important;
+}
+
+.card-dark-no-hover *{
+    color: #ffffff !important;
+}
+
+@media print{
+    body{
+        background-color: white;
+        color: black !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        margin: 0;
+    }
+}
